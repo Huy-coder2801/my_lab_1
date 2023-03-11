@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:grid;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        nav{
+            height: 80px;
+            display: flex;    
+            background-color: greenyellow;
+        }
+
+        div h3{
+            padding: 12px;
+            border: 10px;
+            text-align: center;
+        }
+        .tag:hover{
+            color: red;
+            background-color: azure;
+            
+            border-radius: 6px;
+        }
+
+        .content{
+            display: inline-flex;
+            margin: 10px 10px 10px 0;
+            
+        }
+
+        .content article{
+            width:75%;
+            height: 750px;
+            margin-right: 12px;
+            background-color: green;
+        }
+
+        aside{
+            width: 25%;
+            height: 750px;
+            background-color: gray;
+        }
+
+        .container-1{
+            display: flex;
+            flex-wrap: wrap; 
+            background-color: rgb(15, 123, 15);  
+        }
+
+        .content-1{
+            padding: 18px;
+            border: 12px;
+            margin: 12px;
+            text-align: center;
+            background-color: #fff;
+        }
+        
+        .content-1 p{
+            color: blue;
+        }
+
+        footer{
+            width: 200;
+            
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./banner.jpg" alt="" width="100%">
+    </header>
+    <nav>
+        <div class="tag"><h3>Home</h3></div>
+        <div class="tag"><h3>About</h3></div>
+        <div class="tag"><h3>Product</h3></div>
+        <div class="tag"><h3>News</h3></div>
+        <div class="tag"><h3>Contact</h3></div>
+    </nav>
+
+    <div class="content">
+        <article>
+            <div class="container-1">
+                <div class="content-1">
+                    <img src="./Asus.jpg" alt="">
+                    <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                </div>
+        
+                <div class="content-1">
+                    <img src="./Asus_1.jpg" alt="">
+                    <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                </div>
+        
+                <div class="content-1">
+                    <img src="./Asus_2.jpg" alt="">
+                    <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                </div>
+                <div class="container-1">
+                    <div class="content-1">
+                        <img src="./Asus_1.jpg" alt="">
+                        <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                    </div>
+            
+                    <div class="content-1">
+                        <img src="./Asus_4.jpg" alt="">
+                        <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                    </div>
+            
+                    <div class="content-1">
+                        <img src="./Asus_km.jpg" alt="">
+                        <p>price: <s style="color: gray;"> 800$</s> 740$</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <h1>content of aside</h1>
+        </aside>
+    </div>
+    
+    <footer>
+        <h1>content of footer</h1>
+    </footer>
+</body>
+</html>
